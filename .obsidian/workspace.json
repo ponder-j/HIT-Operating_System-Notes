@@ -11,10 +11,14 @@
             "id": "accde8b17510e0b6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "第3章 进程描述和控制/Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           }
         ]
@@ -162,12 +166,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "497967199949b59d",
+  "active": "accde8b17510e0b6",
   "lastOpenFiles": [
+    "第3章 进程描述和控制/Untitled.md",
+    "第3章 进程描述和控制",
+    "ppts/第3章 进程描述和控制.pdf",
+    "第2章 操作系统概述",
     "ppts/第1章 计算机系统概述.pdf",
     "ppts",
     "未命名文件夹",
-    "第1章",
+    "第1章 计算机系统概述",
     "课程资料/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf"
   ]
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/032_read01/Untitled.md",
+                "file": "读书笔记/032_read01/reports.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "reports"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 204.5
   },
   "right": {
     "id": "f71d535456ef8a27",
@@ -168,8 +168,18 @@
   },
   "active": "accde8b17510e0b6",
   "lastOpenFiles": [
+    "读书笔记/032_read01/images/Pasted image 20251104145942.png",
+    "读书笔记/032_read01/images/Pasted image 20251104145553.png",
+    "读书笔记/032_read01/images",
+    "课程资料/Report2.md",
+    "课程资料/images/Pasted image 20251104145517.png",
+    "课程资料/images",
+    "课程资料/Report1.md",
+    "课程资料/Chapter1.pdf",
+    "课程资料/Chapter2.pdf",
+    "读书笔记/149-左镕畅-read01/149_read01/reports.md",
+    "读书笔记/032_read01/reports.md",
     "第3章 进程描述和控制/Untitled.md",
-    "读书笔记/032_read01/Untitled.md",
     "读书笔记/032_read01",
     "课程资料/intel-system-programming-manual.pdf",
     "课程资料/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf",
@@ -178,10 +188,6 @@
     "读书笔记",
     "第3章 进程描述和控制/attachments/Pasted image 20251031160806.png",
     "第3章 进程描述和控制/attachments/2025-10-31_16-02-05.png",
-    "第3章 进程描述和控制/attachments",
-    "Pasted image 20251031160210.png",
-    "第3章 进程描述和控制",
-    "ppts/第3章 进程描述和控制.pdf",
-    "第2章 操作系统概述"
+    "Pasted image 20251031160210.png"
   ]
 }

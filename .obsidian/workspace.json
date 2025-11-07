@@ -11,10 +11,14 @@
             "id": "0780a38a53171631",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "第1章 计算机系统概述/Untitled.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           }
         ]
@@ -162,32 +166,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "497967199949b59d",
+  "active": "0780a38a53171631",
   "lastOpenFiles": [
+    "第1章 计算机系统概述/1.6 高速缓存.md",
+    "第1章 计算机系统概述/Untitled.md",
+    "第1章 计算机系统概述/1.5 存储器的层次结构.md",
+    "第1章 计算机系统概述/1.4 中断.md",
+    "第1章 计算机系统概述/images/Pasted image 20251107165545.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107165149.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107164524.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107164155.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107163549.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107163522.png",
+    "第1章 计算机系统概述/1.3 指令的执行.md",
+    "第1章 计算机系统概述/images/Pasted image 20251107163419.png",
+    "第1章 计算机系统概述/images/Pasted image 20251107163328.png",
+    "第1章 计算机系统概述/1.2 微处理器的发展.md",
+    "第1章 计算机系统概述/1.1 基本构成.md",
+    "第1章 计算机系统概述/images/Pasted image 20251107163201.png",
+    "第1章 计算机系统概述/images",
+    "读书笔记/032_read02/reports.md",
+    "读书笔记/032_read02 2/images/mermaid-diagram.png",
+    "读书笔记/032_read02 2/reports.md",
+    "读书笔记/032_read02 2/images",
+    "读书笔记/032_read02 2",
+    "读书笔记/032_何思远_read02.zip",
+    "读书笔记/032_read02.zip",
+    "读书笔记/032_read02/images",
     "课程资料/Chapter3_读书笔记.md",
-    "课程资料/Chapter3.pdf",
-    "读书笔记/149-左镕畅-read02/149_read02/reports.md",
     "读书笔记/032_read01/reports.md",
-    "读书笔记/032_read01/images/Pasted image 20251104152244.png",
-    "读书笔记/032_read01/images/Pasted image 20251104152108.png",
+    "读书笔记/032_read02",
+    "课程资料/操作系统--精髓与设计原理-第8版.pdf",
+    "ppts/第4章 线程.pdf",
+    "ppts/第5章 互斥和同步.pdf",
+    "读书笔记/149-左镕畅-read02/149_read02/reports.md",
     "第3章 进程描述和控制/Untitled.md",
-    "读书笔记/032_read01/images/Pasted image 20251104145942.png",
-    "读书笔记/032_read01/images/Pasted image 20251104145553.png",
-    "读书笔记/032_read01/images",
     "课程资料/Report2.md",
-    "课程资料/images/Pasted image 20251104145517.png",
-    "课程资料/images",
     "课程资料/Report1.md",
-    "课程资料/Chapter1.pdf",
-    "课程资料/Chapter2.pdf",
-    "读书笔记/149-左镕畅-read01/149_read01/reports.md",
-    "读书笔记/032_read01",
-    "课程资料/intel-system-programming-manual.pdf",
-    "课程资料/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf",
-    "课程资料/Linux内核完全注释v5.0.pdf",
-    "课程资料/Operating Systems Internals and Design Principles_9th Global Edition.pdf",
-    "第3章 进程描述和控制/attachments/Pasted image 20251031160806.png",
-    "第3章 进程描述和控制/attachments/2025-10-31_16-02-05.png",
-    "Pasted image 20251031160210.png"
+    "读书笔记/149-左镕畅-read01/149_read01/reports.md"
   ]
 }

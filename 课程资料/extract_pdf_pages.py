@@ -49,10 +49,10 @@ def extract_pages(input_pdf, output_pdf, start_page, end_page):
 
 if __name__ == "__main__":
     # 配置参数
-    input_file = "intel-system-programming-manual.pdf"
-    output_file = "Chapter3.pdf"
-    start = 75
-    end = 90
+    input_file = "《计算机网络》实验指导书(2023).pdf"
+    output_file = "实验7.pdf"
+    start = 73
+    end = 105
 
     try:
         extract_pages(input_file, output_file, start, end)

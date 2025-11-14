@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "课程资料/Report3_要求.md",
+                "file": "读书笔记/032_read03/reports.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Report3_要求"
+              "title": "reports"
             }
           }
         ]
@@ -168,7 +168,19 @@
   },
   "active": "0780a38a53171631",
   "lastOpenFiles": [
+    "读书笔记/032_read03/images/Pasted image 20251114162854.png",
+    "读书笔记/032_read03/images/Pasted image 20251114162834.png",
+    "读书笔记/032_read03/images/Pasted image 20251114162659.png",
+    "读书笔记/032_read03/images/Pasted image 20251114162608.png",
+    "读书笔记/032_read03/images/Pasted image 20251114162537.png",
+    "读书笔记/032_read03/images/Pasted image 20251114162517.png",
+    "读书笔记/032_read03/images/Pasted image 20251114161354.png",
+    "读书笔记/032_read03/images",
+    "课程资料/Report3.md",
+    "读书笔记/032_read03/reports.md",
+    "读书笔记/032_read03",
     "课程资料/Report2.md",
+    "课程资料/Chapter3_读书笔记.md",
     "课程资料/Report3_要求.md",
     "课程资料/images/Pasted image 20251104145517.png",
     "课程资料/Report1.md",
@@ -183,13 +195,7 @@
     "第3章 进程描述和控制/images",
     "第3章 进程描述和控制/Untitled.md",
     "第2章 操作系统概述/2.6 多处理器和多核操作系统设计考虑因素.md",
-    "第2章 操作系统概述/images/Pasted image 20251107171923.png",
     "第2章 操作系统概述/2.5 容错性.md",
-    "第2章 操作系统概述/images/Pasted image 20251107171756.png",
-    "第2章 操作系统概述/images/Pasted image 20251107171730.png",
-    "第2章 操作系统概述/images/Pasted image 20251107171656.png",
-    "第2章 操作系统概述/images/Pasted image 20251107171645.png",
-    "第2章 操作系统概述/images/Pasted image 20251107171628.png",
     "第2章 操作系统概述/2.4 现代操作系统的特征.md",
     "第2章 操作系统概述/2.3 主要成就.md",
     "第2章 操作系统概述/2.2 操作系统发展史.md",
@@ -207,11 +213,6 @@
     "读书笔记/032_read02 2/reports.md",
     "读书笔记/032_read02 2/images",
     "读书笔记/032_read02 2",
-    "读书笔记/032_何思远_read02.zip",
-    "读书笔记/032_read02.zip",
-    "读书笔记/032_read02/images",
-    "课程资料/Chapter3_读书笔记.md",
-    "读书笔记/032_read01/reports.md",
-    "读书笔记/149-左镕畅-read02/149_read02/reports.md"
+    "读书笔记/032_何思远_read02.zip"
   ]
 }

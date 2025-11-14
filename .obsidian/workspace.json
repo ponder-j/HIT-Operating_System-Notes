@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "第3章 进程描述和控制/3.1 什么是进程.md",
+                "file": "课程资料/Report3_要求.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.1 什么是进程"
+              "title": "Report3_要求"
             }
           }
         ]
@@ -168,12 +168,20 @@
   },
   "active": "0780a38a53171631",
   "lastOpenFiles": [
+    "课程资料/Report2.md",
+    "课程资料/Report3_要求.md",
+    "课程资料/images/Pasted image 20251104145517.png",
+    "课程资料/Report1.md",
+    "读书笔记/032_read02/reports.md",
+    "课程资料/Chapter6.pdf",
+    "第6章 并发性：死锁和饥饿/期末考不考！.md",
+    "第3章 进程描述和控制/3.1 什么是进程.md",
+    "第6章 并发性：死锁和饥饿",
     "第3章 进程描述和控制/images/Pasted image 20251107172955.png",
     "第3章 进程描述和控制/images/Pasted image 20251107172932.png",
     "第3章 进程描述和控制/images/Pasted image 20251107172911.png",
     "第3章 进程描述和控制/images",
     "第3章 进程描述和控制/Untitled.md",
-    "第3章 进程描述和控制/3.1 什么是进程.md",
     "第2章 操作系统概述/2.6 多处理器和多核操作系统设计考虑因素.md",
     "第2章 操作系统概述/images/Pasted image 20251107171923.png",
     "第2章 操作系统概述/2.5 容错性.md",
@@ -184,10 +192,8 @@
     "第2章 操作系统概述/images/Pasted image 20251107171628.png",
     "第2章 操作系统概述/2.4 现代操作系统的特征.md",
     "第2章 操作系统概述/2.3 主要成就.md",
-    "第2章 操作系统概述/images/Pasted image 20251107171425.png",
     "第2章 操作系统概述/2.2 操作系统发展史.md",
     "第2章 操作系统概述/2.1 操作系统的目标与功能.md",
-    "第2章 操作系统概述/images/Pasted image 20251107171244.png",
     "第2章 操作系统概述/images",
     "第1章 计算机系统概述/1.8 多处理器和多核计算机组织结构.md",
     "第1章 计算机系统概述/1.7 直接内存存取.md",
@@ -198,7 +204,6 @@
     "第1章 计算机系统概述/1.2 微处理器的发展.md",
     "第1章 计算机系统概述/1.1 基本构成.md",
     "第1章 计算机系统概述/images",
-    "读书笔记/032_read02/reports.md",
     "读书笔记/032_read02 2/reports.md",
     "读书笔记/032_read02 2/images",
     "读书笔记/032_read02 2",
@@ -207,11 +212,6 @@
     "读书笔记/032_read02/images",
     "课程资料/Chapter3_读书笔记.md",
     "读书笔记/032_read01/reports.md",
-    "读书笔记/032_read02",
-    "课程资料/操作系统--精髓与设计原理-第8版.pdf",
-    "读书笔记/149-左镕畅-read02/149_read02/reports.md",
-    "课程资料/Report2.md",
-    "课程资料/Report1.md",
-    "读书笔记/149-左镕畅-read01/149_read01/reports.md"
+    "读书笔记/149-左镕畅-read02/149_read02/reports.md"
   ]
 }

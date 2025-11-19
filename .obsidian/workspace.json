@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 204.5
+    "width": 241.5
   },
   "right": {
     "id": "f71d535456ef8a27",
@@ -166,8 +166,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "0780a38a53171631",
+  "active": "497967199949b59d",
   "lastOpenFiles": [
+    "第3章 进程描述和控制/Untitled.md",
+    "第6章 并发性：死锁和饥饿/期末考不考！.md",
+    "读书笔记/032_read03/reports.md",
     "读书笔记/032_read03/images/Pasted image 20251114162854.png",
     "读书笔记/032_read03/images/Pasted image 20251114162834.png",
     "读书笔记/032_read03/images/Pasted image 20251114162659.png",
@@ -177,7 +180,6 @@
     "读书笔记/032_read03/images/Pasted image 20251114161354.png",
     "读书笔记/032_read03/images",
     "课程资料/Report3.md",
-    "读书笔记/032_read03/reports.md",
     "读书笔记/032_read03",
     "课程资料/Report2.md",
     "课程资料/Chapter3_读书笔记.md",
@@ -186,14 +188,11 @@
     "课程资料/Report1.md",
     "读书笔记/032_read02/reports.md",
     "课程资料/Chapter6.pdf",
-    "第6章 并发性：死锁和饥饿/期末考不考！.md",
     "第3章 进程描述和控制/3.1 什么是进程.md",
     "第6章 并发性：死锁和饥饿",
     "第3章 进程描述和控制/images/Pasted image 20251107172955.png",
     "第3章 进程描述和控制/images/Pasted image 20251107172932.png",
-    "第3章 进程描述和控制/images/Pasted image 20251107172911.png",
     "第3章 进程描述和控制/images",
-    "第3章 进程描述和控制/Untitled.md",
     "第2章 操作系统概述/2.6 多处理器和多核操作系统设计考虑因素.md",
     "第2章 操作系统概述/2.5 容错性.md",
     "第2章 操作系统概述/2.4 现代操作系统的特征.md",

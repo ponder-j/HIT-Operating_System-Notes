@@ -1,4 +1,4 @@
-# 实验报告 4：任务管理
+# Chapter 7 任务管理 - 读书笔记
 
 ## 4.1. 任务管理概述
 
@@ -454,16 +454,21 @@ TSS 描述符定义了 TSS 段,格式如下：
 
 **访问路径**：
 
-```
-任务寄存器 (TR)
-    |
-    +--> 段选择器 -------> GDT
-    |                       |
-    +--> 不可见部分          v
-         (基址、限制) <--- TSS 描述符
-                           |
-                           v
-                          TSS
+```mermaid
+graph TD
+    TR[任务寄存器 TR]
+    SEL[段选择器]
+    HIDDEN[不可见部分<br/>基址、限制]
+    GDT[GDT]
+    TSSD[TSS 描述符]
+    TSS[TSS]
+
+    TR --> SEL
+    TR --> HIDDEN
+    SEL --> GDT
+    GDT --> TSSD
+    TSSD --> HIDDEN
+    TSSD --> TSS
 ```
 
 ### 任务门描述符 (Task-Gate Descriptor)
@@ -516,10 +521,18 @@ TSS 描述符定义了 TSS 段,格式如下：
 
 **示例**：
 
-```
-LDT 中的任务门 ─┐
-GDT 中的任务门 ─┼──> GDT 中的 TSS 描述符 ──> TSS
-IDT 中的任务门 ─┘
+```mermaid
+graph LR
+    LDTTG[LDT 中的任务门]
+    GDTTG[GDT 中的任务门]
+    IDTTG[IDT 中的任务门]
+    TSSD[GDT 中的 TSS 描述符]
+    TSS[TSS]
+
+    LDTTG --> TSSD
+    GDTTG --> TSSD
+    IDTTG --> TSSD
+    TSSD --> TSS
 ```
 
 多个任务门可以引用同一个任务,提供不同的访问路径和权限控制。
@@ -867,46 +880,51 @@ IRET  ; 在嵌套任务中执行
 
 **图示过程**：
 
-```
-任务链状态：
-  顶层任务 A (NT=0, Busy=1)
-    ↑
-    | Previous Task Link
-    |
-  嵌套任务 B (NT=1, Busy=1, 当前执行)
+```mermaid
+graph TD
+    subgraph "初始状态"
+        A1[顶层任务 A<br/>NT=0, Busy=1]
+        B1[嵌套任务 B<br/>NT=1, Busy=1<br/>当前执行]
+        B1 -->|Previous Task Link| A1
+    end
 
-任务 B 执行 IRET：
-1. 检查 NT=1 -> 执行任务切换
-2. 读取 Previous Task Link -> 得到任务 A 的 TSS 选择器
-3. 保存任务 B 状态到 TSS_B
-4. 清除任务 B 的 Busy 标志 -> TSS_B Busy=0
-5. 清除 NT 标志(在临时副本中)
-6. 加载任务 A 的状态
-7. 继续执行任务 A
+    subgraph "IRET 执行过程"
+        S1[检查 NT=1 → 执行任务切换]
+        S2[读取 Previous Task Link<br/>得到任务 A 的 TSS 选择器]
+        S3[保存任务 B 状态到 TSS_B]
+        S4[清除任务 B 的 Busy 标志<br/>TSS_B Busy=0]
+        S5[清除 NT 标志<br/>在临时副本中]
+        S6[加载任务 A 的状态]
+        S7[继续执行任务 A]
 
-结果：
-  任务 A (NT=0, Busy=1, 正在执行)
-  任务 B (NT=1, Busy=0, 可用)
+        S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7
+    end
+
+    subgraph "结果状态"
+        A2[任务 A<br/>NT=0, Busy=1<br/>正在执行]
+        B2[任务 B<br/>NT=1, Busy=0<br/>可用]
+    end
+
+    B1 -.->|执行 IRET| S1
+    S7 -.-> A2
 ```
 
 **多层嵌套返回示例**：
 
-```
-初始状态：
-  任务 A (NT=0)
-    → CALL 任务 B
-      → 任务 B (NT=1, Prev=A)
-        → 中断 → 任务 C
-          → 任务 C (NT=1, Prev=B) <-- 当前
+```mermaid
+graph TD
+    A[任务 A<br/>NT=0]
+    B[任务 B<br/>NT=1, Prev=A]
+    C[任务 C<br/>NT=1, Prev=B<br/>当前执行]
+    B_Return[任务 B<br/>NT=1, Prev=A]
+    A_Return[任务 A<br/>NT=0]
+    Stack_Return[正常中断返回<br/>从堆栈恢复]
 
-任务 C 执行 IRET：
-  → 返回任务 B (NT=1, Prev=A)
-
-任务 B 执行 IRET：
-  → 返回任务 A (NT=0)
-
-任务 A 如果执行 IRET(NT=0)：
-  → 正常中断返回,从堆栈恢复(不是任务切换)
+    A -->|CALL 任务 B| B
+    B -->|中断 → 任务 C| C
+    C -->|执行 IRET| B_Return
+    B_Return -->|执行 IRET| A_Return
+    A_Return -->|执行 IRET<br/>NT=0| Stack_Return
 ```
 
 **注意事项**：
@@ -953,18 +971,30 @@ IRET  ; 在嵌套任务中执行
 
 **地址空间组成图**：
 
-```
-任务地址空间
-├── 代码段 (CS)
-├── 数据段 (DS, ES, FS, GS)
-├── 堆栈段 (SS, SS0, SS1, SS2)
-├── 系统段
-│   ├── TSS
-│   └── LDT (可选)
-└── 其他可访问段 (通过 GDT/LDT)
-    ├── 共享代码段
-    ├── 共享数据段
-    └── 共享系统服务
+```mermaid
+graph TD
+    Root[任务地址空间]
+    Code[代码段 CS]
+    Data[数据段<br/>DS, ES, FS, GS]
+    Stack[堆栈段<br/>SS, SS0, SS1, SS2]
+    System[系统段]
+    TSS[TSS]
+    LDT[LDT 可选]
+    Other[其他可访问段<br/>通过 GDT/LDT]
+    SharedCode[共享代码段]
+    SharedData[共享数据段]
+    SharedSys[共享系统服务]
+
+    Root --> Code
+    Root --> Data
+    Root --> Stack
+    Root --> System
+    Root --> Other
+    System --> TSS
+    System --> LDT
+    Other --> SharedCode
+    Other --> SharedData
+    Other --> SharedSys
 ```
 
 ### 了解把任务映射到线性和物理地址空间的方法
@@ -986,16 +1016,20 @@ IRET  ; 在嵌套任务中执行
 - 缺点：任务间隔离性较弱
 
 **特点**：
-```
-任务 A                任务 B
-  ↓                    ↓
-线性地址空间 (共享)
-  ↓
-页目录 (共享, CR3 相同)
-  ↓
-页表
-  ↓
-物理内存
+```mermaid
+graph TD
+    TaskA[任务 A]
+    TaskB[任务 B]
+    Linear[线性地址空间 共享]
+    PageDir[页目录<br/>共享, CR3 相同]
+    PageTable[页表]
+    PhysMem[物理内存]
+
+    TaskA --> Linear
+    TaskB --> Linear
+    Linear --> PageDir
+    PageDir --> PageTable
+    PageTable --> PhysMem
 ```
 
 **方法 2：每个任务有自己的线性地址空间映射到物理地址空间**
@@ -1017,17 +1051,27 @@ IRET  ; 在嵌套任务中执行
   - 实现选择性共享(如共享代码、共享系统区域)
 
 **特点**：
-```
-任务 A                       任务 B
-  ↓                           ↓
-线性地址空间 A              线性地址空间 B
-  ↓                           ↓
-页目录 A (CR3_A)           页目录 B (CR3_B)
-  ↓                           ↓
-页表 A                      页表 B
-  ↓                           ↓
-物理内存                    物理内存
-(可能部分重叠)              (可能部分重叠)
+```mermaid
+graph TD
+    TaskA[任务 A]
+    TaskB[任务 B]
+    LinearA[线性地址空间 A]
+    LinearB[线性地址空间 B]
+    PageDirA[页目录 A<br/>CR3_A]
+    PageDirB[页目录 B<br/>CR3_B]
+    PageTableA[页表 A]
+    PageTableB[页表 B]
+    PhysMemA[物理内存<br/>可能部分重叠]
+    PhysMemB[物理内存<br/>可能部分重叠]
+
+    TaskA --> LinearA
+    TaskB --> LinearB
+    LinearA --> PageDirA
+    LinearB --> PageDirB
+    PageDirA --> PageTableA
+    PageDirB --> PageTableB
+    PageTableA --> PhysMemA
+    PageTableB --> PhysMemB
 ```
 
 **共享区域要求**：
@@ -1062,16 +1106,18 @@ IRET  ; 在嵌套任务中执行
 **任务逻辑地址空间**是指任务中代码使用的 **逻辑地址(段选择器:偏移量)**。
 
 **地址转换过程**：
-```
-逻辑地址(段选择器:偏移量)
-    ↓
-段转换(使用 GDT/LDT 中的段描述符)
-    ↓
-线性地址
-    ↓
-页转换(如果启用分页,使用页目录和页表)
-    ↓
-物理地址
+```mermaid
+graph TD
+    Logical[逻辑地址<br/>段选择器:偏移量]
+    SegTrans[段转换<br/>使用 GDT/LDT 中的段描述符]
+    Linear[线性地址]
+    PageTrans[页转换<br/>如果启用分页,使用页目录和页表]
+    Physical[物理地址]
+
+    Logical --> SegTrans
+    SegTrans --> Linear
+    Linear --> PageTrans
+    PageTrans --> Physical
 ```
 
 **在任务之间共享数据的方法**：
@@ -1127,15 +1173,23 @@ mov eax, [es:0]  ; 读取任务 A 写入的数据
 3. 任务通过 LDT 中的选择器(TI=1)访问共享段
 
 **示例**：
-```
-共享 LDT
-├── 选择器 0x04 (TI=1): 共享代码段
-├── 选择器 0x0C (TI=1): 共享数据段
-└── 其他段描述符
+```mermaid
+graph TD
+    SharedLDT[共享 LDT]
+    Seg1[选择器 0x04 TI=1<br/>共享代码段]
+    Seg2[选择器 0x0C TI=1<br/>共享数据段]
+    Seg3[其他段描述符]
 
-任务 A TSS: LDT = 共享 LDT 选择器
-任务 B TSS: LDT = 共享 LDT 选择器
-任务 C TSS: LDT = 不同的 LDT (无法访问共享段)
+    TaskA[任务 A TSS<br/>LDT = 共享 LDT 选择器]
+    TaskB[任务 B TSS<br/>LDT = 共享 LDT 选择器]
+    TaskC[任务 C TSS<br/>LDT = 不同的 LDT<br/>无法访问共享段]
+
+    SharedLDT --> Seg1
+    SharedLDT --> Seg2
+    SharedLDT --> Seg3
+
+    TaskA --> SharedLDT
+    TaskB --> SharedLDT
 ```
 
 **优点**：

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书笔记/032_read03/reports.md",
+                "file": "李治军-操作系统/1.2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "reports"
+              "title": "1.2"
             }
           }
         ]
@@ -166,11 +166,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "497967199949b59d",
+  "active": "0780a38a53171631",
   "lastOpenFiles": [
+    "李治军-操作系统/images/Pasted image 20251125133556.png",
+    "李治军-操作系统/images/Pasted image 20251125133421.png",
+    "李治军-操作系统/images",
+    "读书笔记/032_read03/reports.md",
+    "李治军-操作系统/1.2.md",
+    "李治军-操作系统",
     "第3章 进程描述和控制/Untitled.md",
     "第6章 并发性：死锁和饥饿/期末考不考！.md",
-    "读书笔记/032_read03/reports.md",
     "读书笔记/032_read03/images/Pasted image 20251114162854.png",
     "读书笔记/032_read03/images/Pasted image 20251114162834.png",
     "读书笔记/032_read03/images/Pasted image 20251114162659.png",
@@ -191,7 +196,6 @@
     "第3章 进程描述和控制/3.1 什么是进程.md",
     "第6章 并发性：死锁和饥饿",
     "第3章 进程描述和控制/images/Pasted image 20251107172955.png",
-    "第3章 进程描述和控制/images/Pasted image 20251107172932.png",
     "第3章 进程描述和控制/images",
     "第2章 操作系统概述/2.6 多处理器和多核操作系统设计考虑因素.md",
     "第2章 操作系统概述/2.5 容错性.md",
@@ -209,9 +213,6 @@
     "第1章 计算机系统概述/1.2 微处理器的发展.md",
     "第1章 计算机系统概述/1.1 基本构成.md",
     "第1章 计算机系统概述/images",
-    "读书笔记/032_read02 2/reports.md",
-    "读书笔记/032_read02 2/images",
-    "读书笔记/032_read02 2",
-    "读书笔记/032_何思远_read02.zip"
+    "读书笔记/032_read02 2/images"
   ]
 }

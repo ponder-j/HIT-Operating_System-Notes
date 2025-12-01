@@ -346,7 +346,7 @@ stateDiagram-v2
 
 结构：
 
-![[Pasted image 20251201145545.png]]
+![Pasted image 20251201145545](./images/Pasted image 20251201145545.png)
 
 - **段选择子**：LDT在GDT中的段选择子
 - **基址**：LDT段在线性地址空间的起始地址

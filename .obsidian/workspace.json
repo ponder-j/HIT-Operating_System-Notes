@@ -1,0 +1,217 @@
+{
+  "main": {
+    "id": "96ed32ab3cd49f49",
+    "type": "split",
+    "children": [
+      {
+        "id": "606f270e6d6e7352",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0780a38a53171631",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "第3章 进程描述和控制/3.1 什么是进程.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "3.1 什么是进程"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b1763e875b30b4de",
+    "type": "split",
+    "children": [
+      {
+        "id": "0927cc3c2d500726",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "497967199949b59d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fe93fc40f3dc952d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "75255ba47eec86bb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 204.5
+  },
+  "right": {
+    "id": "f71d535456ef8a27",
+    "type": "split",
+    "children": [
+      {
+        "id": "961c16f4d4c93e2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a1c6b3fdff12ddc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "204ef9b594820693",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "2621fb1d86d7daea",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "69cb22e069742fe4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "0780a38a53171631",
+  "lastOpenFiles": [
+    "第3章 进程描述和控制/images/Pasted image 20251107172955.png",
+    "第3章 进程描述和控制/images/Pasted image 20251107172932.png",
+    "第3章 进程描述和控制/images/Pasted image 20251107172911.png",
+    "第3章 进程描述和控制/images",
+    "第3章 进程描述和控制/Untitled.md",
+    "第3章 进程描述和控制/3.1 什么是进程.md",
+    "第2章 操作系统概述/2.6 多处理器和多核操作系统设计考虑因素.md",
+    "第2章 操作系统概述/images/Pasted image 20251107171923.png",
+    "第2章 操作系统概述/2.5 容错性.md",
+    "第2章 操作系统概述/images/Pasted image 20251107171756.png",
+    "第2章 操作系统概述/images/Pasted image 20251107171730.png",
+    "第2章 操作系统概述/images/Pasted image 20251107171656.png",
+    "第2章 操作系统概述/images/Pasted image 20251107171645.png",
+    "第2章 操作系统概述/images/Pasted image 20251107171628.png",
+    "第2章 操作系统概述/2.4 现代操作系统的特征.md",
+    "第2章 操作系统概述/2.3 主要成就.md",
+    "第2章 操作系统概述/images/Pasted image 20251107171425.png",
+    "第2章 操作系统概述/2.2 操作系统发展史.md",
+    "第2章 操作系统概述/2.1 操作系统的目标与功能.md",
+    "第2章 操作系统概述/images/Pasted image 20251107171244.png",
+    "第2章 操作系统概述/images",
+    "第1章 计算机系统概述/1.8 多处理器和多核计算机组织结构.md",
+    "第1章 计算机系统概述/1.7 直接内存存取.md",
+    "第1章 计算机系统概述/1.6 高速缓存.md",
+    "第1章 计算机系统概述/1.5 存储器的层次结构.md",
+    "第1章 计算机系统概述/1.4 中断.md",
+    "第1章 计算机系统概述/1.3 指令的执行.md",
+    "第1章 计算机系统概述/1.2 微处理器的发展.md",
+    "第1章 计算机系统概述/1.1 基本构成.md",
+    "第1章 计算机系统概述/images",
+    "读书笔记/032_read02/reports.md",
+    "读书笔记/032_read02 2/reports.md",
+    "读书笔记/032_read02 2/images",
+    "读书笔记/032_read02 2",
+    "读书笔记/032_何思远_read02.zip",
+    "读书笔记/032_read02.zip",
+    "读书笔记/032_read02/images",
+    "课程资料/Chapter3_读书笔记.md",
+    "读书笔记/032_read01/reports.md",
+    "读书笔记/032_read02",
+    "课程资料/操作系统--精髓与设计原理-第8版.pdf",
+    "读书笔记/149-左镕畅-read02/149_read02/reports.md",
+    "课程资料/Report2.md",
+    "课程资料/Report1.md",
+    "读书笔记/149-左镕畅-read01/149_read01/reports.md"
+  ]
+}
